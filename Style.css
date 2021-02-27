@@ -1,94 +1,139 @@
 body {
-  background: rgb(130, 215, 248);
-}
-.yellow
-{
-  background: rgb(254, 254, 186);
+  background-color: rgb(230, 251, 255);
 }
 
 .box{
-    padding: 100px;
-    background: rgb(130, 215, 248);
+    padding: 10px;
+    background: rgb(241, 253, 255);
+    border: 1px solid rgb(255, 255, 255);
     margin-top:50px;
     margin-left:5px;
     margin-right:5px;
     margin-bottom:20px;
-    align-content: center;
+    align-content: right;
   }
-
+..navbar div {
+  margin: inherit;
+  background-color: rgb(0, 78, 91);
+}
+}
 .navbar {
+    display: inline;
+    max-height: 20px;
     margin-right: 0px;
     margin-left: 0px;
     padding: 0px;
-    background:lightcyan;
+    background-color:rgb(76, 112, 118);
   }
 
+
   .navbar li {
-    display: block;
+    display: inline-block;
     padding: 20px;
     margin-right: 0px;
     margin-left: 0px;
     cursor: pointer;
   }
+  .title {
+    color : rgb(194, 194, 194);
+    font-family: 'Times New Roman', Times, serif, Geneva, Tahoma, sans-serif;
+    font-weight : bolder;
+    text-align: center;
+  }
+  
+  .heading{
+    color : rgb(139, 139, 139);
+    font-family: 'Times New Roman', Times, serif, Geneva, Tahoma, sans-serif;
+    font-weight : bolder;
+    
+  }
+
+
 
   .h1{
-    font-size: 40px;
-    color: snow;
+    font-size: 100px;
+    color: rgb(2, 124, 138);
 
   }
   .h2{
-    font-size: 30px;
+    color : rgb(194, 194, 194);
+    font-family: 'Times New Roman', Times, serif, Geneva, Tahoma, sans-serif;
+    font-weight : bolder;
+    font-size: 60px;
+    float: right;
+
   }
 
+  .h3. {
+    width: 30%;
+    padding-left: 15px;
+    margin-left: 15px;
+    float: right;
+    background-color: rgb(40, 40, 40);
+    }
   .p{
-    font-size: 30px;
+    font-size: 20px;
+    align-content: left;
+    
+
   }
   
   .c-d{
-    color: rgb(161, 219, 243);;
+    color: rgb(255, 255, 255);;
     font-size: 25px;
     background: 50px;
-    border: 2px solid whitesmoke;
+    border: 1px solid whitesmoke;
   }
-  .c-d:hover{
-    background-color:#f9f9f9 ;
+  .navitem:hover{
+    background-color:#ccf9ff ;
 
   }
 
   .latitude{
-    color: rgb(161, 219, 243);
+    color: rgb(255, 255, 255);
     font-family: sans-serif;
-    font-size: 40px;
-    border: 2px solid whitesmoke;
-    padding: 20px;
+    font-size: 20px;
+    padding: 10px;
   }
   .latitude:hover{
-    background-color:#f9f9f9 ;
+    background-color:#ffffff  ;
   }
   .dropdown{
-    color:  rgb(85, 198, 247);
+    color:  rgb(159, 226, 255);
   }
   
-  23
 
-.img:hover {
-    border: solid 10px transparent;
+/* Images */
+.img{
+  width:100% !important;
+  height:100% !important;
 }
-.img:hover {
-    border-color: grey;
+.active, .panel:hover{
+  border-color:#affffb;
+  border-style: solid; 
 }
-  @media(max-width: 280px) 
-  {
-    .nav li{
-    padding:10px;}
-    .box{
-      margin-right: 15px;
-      margin-left: 15px;
+
+  @media(max-width: 992px) {
+    .navbar-expand-lg {
+    background-color: #c4f4ff;
     }
-    .nav ul{
-      visibility: visible;
+    .navbar {
+      max-height: none;
+      padding: inherit;
     }
+    .navbar-brand {
+      padding: 10px;
+    }
+    button{
+      margin-right: 30px;
+    }
+    button:focus {
+      outline: 1px dotted;
+      outline: auto 5px;
+    }
+    [class*="col-"] {
+      width: 100%;
+  }
   }
 
 
-@media

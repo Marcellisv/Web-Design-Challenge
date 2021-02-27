@@ -1,79 +1,58 @@
 <!DOCTYPE html>
-
-
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Web Challenge: Latitude></title>
-    
-    <!--Bring in bootstap stylesheets-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  
-    <link rel="stylesheet" href="style.css">
-  </head> 
-    
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    </head>
-  <body>
-    <div class="container-fluid">
-        <nav class="navbar navbar-inverse">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="./landing.html"><span class="latitude">Latitude</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls=" navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    </button>
-                </div>
-                <ul class= "nav navbar-nav navbar-right">
-                    <li>
-                        <div class="dropdown">
-                            <button class="btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Plots
-                            <span class="caret"></span></button>
-                            <ul class= "dropdown-menu">
-                                <li><a href="./latvtemp.html">Temperature Plot</a></li>
-                                <li><a href="./latvhumidity.html">Humidity Plot</a></li>
-                                <li><a href="./latvclouds.html">Cloudiness Plot</a></li>
-                                <li><a href="./latvwind.html">Windspeed Plot</a></li>
-                            </ul>    
-                        </div>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="./Comparisons.html"><span class="c-d">Comparison</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="./Data.html"><span class="c-d">Data</a>
-                    </li>
-                </ul>
-            </div>    
-        </nav>
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="landing.html">Lattitude</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Plots<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+            <li><a href="./latvtemp.html">Temperature Plot</a></li>
+            <li><a href="./latvhumidity.html">Humidity Plot</a></li>
+            <li><a href="./latvclouds.html">Cloudiness Plot</a></li>
+            <li><a href="./latvwind.html">Windspeed Plot</a></li>
+    </ul> 
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="comparisons.html">Comparison</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="data.html">Data</a>
+      </li>      
+    </ul>
+  </div>
+</nav>
 
         <div class="content">
         <div class="container-fluid">
             <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-6">
-            <h2>Vs. Max Temperature</h2>
-            <a href="./latvtemp.html"><img src="./images/Fig1.png" alt="Latitude vs. Max Temperature" height="500" width="500"></a>
+            <h2 class="heading">Vs. Max Temperature</h2>
+            <a href="./latvtemp.html"><img class="panel" src="./images/Fig1.png" alt="Latitude vs. Max Temperature" height="400" width="400"></a>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-6">
-            <h2>Vs. Humidity</h2>
-            <a href="./latvhumidity.html"><img src="./images/Fig2.png" alt="Latitude vs. Humidity" height="500" width="500"></a>
+            <h2 class="heading">Vs. Humidity</h2>
+            <a href="./latvhumidity.html"><img class="panel" src="./images/Fig2.png" alt="Latitude vs. Humidity" height="400" width="400"></a>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-6">
-            <h2>Vs. Cloudiness</h2>
-            <a href="./latvcolouds.html"><img src="./images/Fig3.png" alt="Latitude vs. Cloudiness" height="500" width="500"></a>
+            <h2 class="heading">Vs. Cloudiness</h2>
+            <a href="./latvclouds.html"><img class="panel"  src="./images/Fig3.png" alt="Latitude vs. Cloudiness" height="400" width="400"></a>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-6">
-            <h2>Vs. Wind Speed</h2>
-            <a href="./latvwind.htlm"><img src="./images/Fig4.png" alt="Latitude vs. Wind Speed" height="500" width="500"></a>
+            <h2 class="heading">Vs. Wind Speed</h2>
+            <a href="./latvwind.html"><img class="panel"  src="./images/Fig4.png" alt="Latitude vs. Wind Speed" height="400" width="400"></a>
             </div>
 
             </div>
